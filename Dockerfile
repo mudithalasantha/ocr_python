@@ -24,9 +24,9 @@ RUN apt-get install -y python python-pip
 
 # build leptonica
 #RUN apt-get install libleptonica-dev
-RUN wget http://www.leptonica.com/source/leptonica-1.75.3.tar.gz
-RUN tar -zxvf leptonica-1.75.3.tar.gz
-WORKDIR leptonica-1.75.3/
+RUN wget http://www.leptonica.com/source/leptonica-1.71.tar.gz
+RUN tar -zxvf leptonica-1.71.tar.gz
+WORKDIR leptonica-1.71/
 RUN ./autobuild
 RUN ./configure
 RUN make
