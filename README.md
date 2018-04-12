@@ -1,6 +1,6 @@
 # OCR Server
 
-An web-based Optical Character Recognition system.
+A web-based Optical Character Recognition system.
 
 ## Dependencies
 
