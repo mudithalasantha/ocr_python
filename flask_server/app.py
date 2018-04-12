@@ -23,10 +23,14 @@ def ocr():
             return jsonify({"output": output})
         else:
             return jsonify({"error": "only .jpg files, please"})
-    except:
+    except Exception as inst:
+        # return jsonify(
+        #     {"error": "Did you mean to send: {'image_url': 'some_jpeg_url'}"}
+        # )
         return jsonify(
-            {"error": "Did you mean to send: {'image_url': 'some_jpeg_url'}"}
+            {"error":str(inst)}
         )
+
 
 
 @app.errorhandler(500)
