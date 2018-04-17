@@ -20,9 +20,9 @@ def ocr():
         url = request.json['image_url']
         if 'jpg' in url:
             output = process_image(url)
-            return jsonify({"output": output})
+            return jsonify({"data":output})
         else:
-            return jsonify({"error": "only .jpg files, please"})
+            return jsonify({"data":{"error": "Unprocessable Entity. Only .jpg files.", "code": 422, "error": True}})
     except Exception as inst:
         # return jsonify(
         #     {"error": "Did you mean to send: {'image_url': 'some_jpeg_url'}"}
