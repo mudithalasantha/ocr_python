@@ -21,6 +21,7 @@ RUN apt-get --yes install python-imaging
 RUN apt-get install -y imagemagick
 RUN apt-get install -y wget
 RUN apt-get install -y python python-pip
+RUN apt-get install -y python-opencv
 
 # build leptonica
 #RUN apt-get install libleptonica-dev

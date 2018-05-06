@@ -19,3 +19,5 @@ pycrypto==2.6.1
 pytesseract==0.1.5
 requests==2.5.1
 wsgiref==0.1.2
+numpy
+matplotlib
